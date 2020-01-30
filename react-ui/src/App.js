@@ -1,6 +1,8 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Header from "./components/Header";
+// import Footer from "./components/Footer";
 
 function App() {
   const [message, setMessage] = useState(null);
@@ -31,6 +33,10 @@ function App() {
 
   return (
     <div className="App">
+      <Header />
+      
+      <h1>BODY ALERT</h1>
+
       <footer className="App-header">
         { process.env.NODE_ENV === 'production' ?
             <p>
