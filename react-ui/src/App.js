@@ -31,14 +31,14 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <footer className="App-header">
         { process.env.NODE_ENV === 'production' ?
             <p>
-              This is a production build from create-react-app.
+              This is going to be an open education platform
+              /n production server
             </p>
           : <p>
-              Edit <code>src/App.js</code> and save to reload.
+              notProduction
             </p>
         }
         <p>{'« '}<strong>
@@ -46,21 +46,7 @@ function App() {
             ? 'Fetching message from API'
             : message}
         </strong>{' »'}</p>
-        <p><a
-          className="App-link"
-          href="https://github.com/mars/heroku-cra-node"
-        >
-          React + Node deployment on Heroku
-        </a></p>
-        <p><a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a></p>
-      </header>
+      </footer>
     </div>
   );
 
