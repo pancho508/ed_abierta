@@ -32,7 +32,7 @@ function App() {
   }, [fetchData]);
 
   return (
-    <div className="App">
+    <div>
       <Header />
       
       <h1>BODY ALERT</h1>
